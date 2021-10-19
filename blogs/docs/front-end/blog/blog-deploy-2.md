@@ -263,4 +263,4 @@ npm install markdown-it-task-lists
 [使用 GitHub Actions 自动部署博客](https://vuepress-theme-reco.recoluan.com/views/other/github-actions.html)    
 [如何在 GitHub Actions 时使用 secretKey](https://vuepress-theme-reco.recoluan.com/views/other/github-actions-secret-key.html)    
 [分类和标签包含中文会导致路由匹配不到，跳转至404页面 ](https://github.com/vuepress-reco/vuepress-theme-reco/issues/276)    
-[本文项目地址](https://github.com/houcy7/blog)
+[本文项目地址](https://github.com/yqMac/rkblog)
