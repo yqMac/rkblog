@@ -1,7 +1,6 @@
 ---
 title: HASHCAT撞库解密软件
 date: 2021-10-20
-cover: https://zyj_yida.gitee.io/source/img/indexbg/52.jpg
 categories:
   - 运维
 subSidebar: 'auto'
@@ -17,8 +16,7 @@ sticky: 1
 :::tip 
 + GPU计算
 + 哈希HASH反算明文
-+ MD5 SHA256 密码破解
-
++ MD5/SHA256/等等 密码破解
 :::
 
 <!-- more -->
