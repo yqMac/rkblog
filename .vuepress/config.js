@@ -1,7 +1,7 @@
 const themeConfig = require('./config/theme/index');
 
 module.exports = {
-    "title": "随手记",
+    "title": "LMS随手",
     "description": "努力不一定成功，但放弃一定失败",
     "dest": "dist",
     "head" : [
