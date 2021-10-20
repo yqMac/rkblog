@@ -15,9 +15,10 @@ sticky: 1
 
 
 :::tip 
++ GPU计算
++ 哈希HASH反算明文
++ MD5 SHA256 密码破解
 
-+ 计算明文
-+ GPU
 :::
 
 <!-- more -->
