@@ -83,8 +83,8 @@ sh gen.sh 19500101 20200101
 cp 19500101_20200101.txt year.dict
 awk 'NR==FNR { a[$0]; next } { for (i in a) print i$0 }' region.txt year.dict > region_1950_2020.dict
 
-# 追加盐 盐值固定ERFGTYHIDR816975
-:%s!\(.*\)!\1:ERFGTYHIDR816975!g
+# 追加盐 盐值固定 saltx
+:%s!\(.*\)!\1:saltx!g
 
 
 nohup hashcat -m 1420 myhash01.txt -a 6 region_1950_2020.dict --custom-charset1 ?dX ?d?d?d?1 --force -o salt_test.out --status --status-timer 10 >> hashcat.log 2>&1 &
