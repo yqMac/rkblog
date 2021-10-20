@@ -25,14 +25,14 @@ sticky: 1
 ## Hive相关
 - 数据导出
 ```bash
-hive -e "
+hive -e '
 set mapred.job.queue.name=root.tianchuang;
 set hive.cli.print.header=true;
 set hive.resultset.use.unique.column.names=false;
 
 select * from db_name.table_name where 1=1;
 
-"  | sed 's/[\t]/,/g' | grep -v 'WARN' > out_data.csv
+' | sed 's/[\t]/,/g' | grep -v 'WARN' > out_data.csv
 
 ```
 
