@@ -16,17 +16,17 @@ sticky: 1
 
 :::tip 
 
-+ [博客的搭建 - 上](./blog-deploy-1.html)    
-+ [博客的搭建 - 下](./blog-deploy-2.html) 
++ 计算明文
++ GPU
 :::
 
 <!-- more -->
 
 
 
-[TOC]
+[[toc]]
 
-### CUDA安装
+## CUDA安装
 - 查看设备
 ```bash
 yum install -y pciutils
@@ -63,7 +63,7 @@ lsmod | grep nouveau
 nvidia-smi
 ```
 
-### 软件安装
+## 软件安装
 ```bash
 wget https://hashcat.net/files/hashcat-6.2.4.7z
 yum install -y gcc p7zip
@@ -75,7 +75,7 @@ ln -s hashcat /usr/sbin/hashcat
 hashcat -m 0 1de28c5ea8f7a94114eeddb48bf5226c -a 3 1?d?d?d?d?d?d?d?d?d?d --show --force
 
 ```
-### 字典生成
+## 字典生成
 ```bash
 # 年月日数据
 sh gen.sh 19500101 20200101
@@ -89,14 +89,14 @@ awk 'NR==FNR { a[$0]; next } { for (i in a) print i$0 }' region.txt year.dict > 
 nohup hashcat -m 1420 myhash01.txt -a 6 region_1950_2020.dict --custom-charset1 ?dX ?d?d?d?1 --force -o salt_test.out --status --status-timer 10 >> hashcat.log 2>&1 &
 ```
 
-### 异常
+## 异常
 - Unable to find the kernel source tree for the currently running kernel. 
 ```bash
   yum -y install kernel-devel
   yum -y install epel-release
 ```
 
-### 参考
+## 参考
 
 - [阿里云安装文档](https://github.com/jas502n/sangfor/blob/master/1earn/Security/%E5%AE%89%E5%85%A8%E5%B7%A5%E5%85%B7/Hashcat.md)
 - [HashCat入参详解](https://apt404.github.io/2017/04/26/use-hashcat-crack-hash/)
