@@ -8,7 +8,6 @@ tags:
  - 博客
  - 前端
 publish: true
-sticky: 2
 ---
 
 
@@ -255,7 +254,7 @@ npm install markdown-it-task-lists
 中括号中间需要有一个空格     
 :::    
 
-## 相关链接    
+## 相关链接
 [金山词霸 - 每日一句](http://open.iciba.com/dsapi/)    
 [bing - 壁纸](http://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1)    
 [Vue3.0 axios跨域请求代理服务器配置](https://blog.csdn.net/tdl081071tdy/article/details/90080818)    

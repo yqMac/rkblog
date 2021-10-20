@@ -3,7 +3,7 @@
             class="abstract-item draw"
             @click="$router.push(item.path)">
         <i v-if="item.frontmatter.sticky" class="iconfont reco-sticky"></i>
-        <div class="cover">
+        <div v-if="item.frontmatter.cover" class="cover">
             <img class="cover-img" :src="item.frontmatter.cover
       || 'https://tva1.sinaimg.cn/large/e6c9d24ely1go71bxll33j21hb0u0npl.jpg'" :alt="item.title"/>
         </div>

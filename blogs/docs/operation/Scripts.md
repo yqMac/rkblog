@@ -1,7 +1,6 @@
 ---
 title: 常用脚本内容
 date: 2021-10-20
-cover: https://zyj_yida.gitee.io/source/img/indexbg/52.jpg
 categories:
   - 运维
 subSidebar: 'auto'
@@ -14,10 +13,9 @@ tags:
 sticky: 1
 ---
 
-
 :::tip 
 + 常用脚本
-+ Bash Python Hive Hbase
++ Bash/Python/Hive/Hbase
 :::
 
 <!-- more -->
