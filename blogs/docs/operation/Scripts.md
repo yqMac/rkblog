@@ -9,8 +9,8 @@ tags:
  - 运维
  - 脚本
  - 数仓
-keys:
-  - '775d1367b0a0332ca495b588d48a7912'
+# keys:
+#   - '775d1367b0a0332ca495b588d48a7912'
 sticky: 1
 ---
 
@@ -27,14 +27,14 @@ sticky: 1
 ## Hive相关
 - 数据导出
 ```bash
-hive -e '
-set mapred.job.queue.name=root.tianchuang;
-set hive.cli.print.header=true;
-set hive.resultset.use.unique.column.names=false;
+hive -e "  
+set mapred.job.queue.name=root.tianchuang;  
+set hive.cli.print.header=true;  
+set hive.resultset.use.unique.column.names=false;  
 
-select * from db_name.table_name where 1=1;
-
-' | sed 's/[\t]/,/g' | grep -v 'WARN' > out_data.csv
+select * from db_name.table_name where 1=1;  
+  
+" | sed 's/[\t]/,/g' | grep -v 'WARN' > out_data.csv  
 
 ```
 
