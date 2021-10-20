@@ -25,8 +25,8 @@ sticky: 1
 [[toc]]
 
 ## Hive相关
-- 数据导出
-```bash
+### 数据导出
+```shell 
 hive -e "  
 set mapred.job.queue.name=root.tianchuang;  
 set hive.cli.print.header=true;  
@@ -40,7 +40,7 @@ select * from db_name.table_name where 1=1;
 
 ## Bash脚本
 
-- 格式化输出日志rkecho
+### 格式化输出日志rkecho
 ```bash
 function rkecho()
 {
@@ -59,7 +59,7 @@ function rkecho()
 rkecho "测试"
 ```
 
-- 绑定退出事件
+### 绑定退出事件
 ```bash
 # 绑定结束事件
 function script_exit_hook {
@@ -69,7 +69,7 @@ trap script_exit_hook EXIT
 
 ```
 
-- 耗时时间
+### 耗时时间
 ```bash
 ts_start=`date +%s`
 
@@ -85,7 +85,7 @@ echo "耗时:${ts_spend_str},结束时间:${ts_stop}"
 
 ```
 
-- 循环处理
+### 循环处理
 ```bash
 pys=("a" "b" "c" "d" "e" "f")
 for var in ${pys[@]}
