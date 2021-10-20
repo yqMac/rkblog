@@ -83,6 +83,22 @@ echo "耗时:${ts_spend_str},结束时间:${ts_stop}"
 
 ```
 
+- 循环处理
+```bash
+pys=("a" "b" "c" "d" "e" "f")
+for var in ${pys[@]}
+do
+  # Do smth with var 
+  echo "${var}"
+
+  if [ $? -ne 0 ]; then
+    echo "ERROR: ${var}数据计算失败!"
+    exit 1
+  fi
+  echo "${var}数据计算成功."
+done
+```
+
 ### Python相关
 
 
