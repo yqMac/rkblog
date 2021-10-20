@@ -82,6 +82,6 @@ typings/
 scripts
 
 .idea
-
+.DS_Store
 default.conf
 Dockerfile
