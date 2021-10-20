@@ -1,6 +1,7 @@
 const themeConfig = require('./config/theme/index');
 
 module.exports = {
+
     "title": "LMS随手",
     "description": "努力不一定成功，但放弃一定失败",
     "dest": "dist",
@@ -16,7 +17,7 @@ module.exports = {
     },
     themeConfig,
     "markdown": {
-        "lineNumbers": false,
+        "lineNumbers": true,
         extendMarkdown: md => {
             md.use(require('markdown-it-task-lists'), {enabled: true});
         }
