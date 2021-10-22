@@ -3,7 +3,7 @@ title: 博客的搭建 - 下
 date: 2021-03-04
 cover: https://zyj_yida.gitee.io/source/img/indexbg/52.jpg
 categories:
-  - 博客搭建
+  - 运维
 tags:
  - 博客
  - 前端
