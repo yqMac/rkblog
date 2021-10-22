@@ -7,7 +7,7 @@ subSidebar: 'auto'
 tags:
  - PySpark
  - Python
- - 变量开发
+ - 增量
  - 脚本
 sticky: 1
 ---
@@ -20,7 +20,7 @@ sticky: 1
 <!-- more -->
 
 
-[TOC]
+[[toc]]
 
 ### 前置
 - tbh 历史存量
