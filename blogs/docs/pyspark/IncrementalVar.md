@@ -20,7 +20,7 @@ sticky: 1
 <!-- more -->
 
 
-[TOC]
+[[toc]]
 
 ### 前置
 - tbh 历史存量
