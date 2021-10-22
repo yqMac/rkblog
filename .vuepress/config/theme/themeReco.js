@@ -23,6 +23,7 @@ module.exports =
         ['script', {}, `var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?a46ad829404b742959db51bb648db536";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();`]
     ],
     'subSidebar': 'auto',//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
+    'sidebar': 'auto',
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "最后更新时间",
@@ -42,8 +43,11 @@ module.exports =
         "juejin": false, //掘金
         "segmentfault": false, //思否
         "csdn": false, //CSDN
-        "wechat": "https://tva1.sinaimg.cn/large/008eGmZEly1goaqpuypj6j30tc12l0wx.jpg", //微信
-        "qq": "https://tva1.sinaimg.cn/large/008eGmZEly1goaqpkhqyjj30u01hddlt.jpg" //QQ
+        "wechat":false,
+        "qq":false,
+        
+        // "wechat": "https://tva1.sinaimg.cn/large/008eGmZEly1goaqpuypj6j30tc12l0wx.jpg", //微信
+        // "qq": "https://tva1.sinaimg.cn/large/008eGmZEly1goaqpkhqyjj30u01hddlt.jpg" //QQ
     },
     // 自我介绍 end
 

@@ -2,8 +2,10 @@
   <main class="page" :style="pageStyle">
     <ModuleTransition>
       <div v-show="recoShowModule && $page.title" class="page-title">
+      <div style="position: relative;background: none rgba(0, 0, 0, 0.2);box-shadow: none;">
         <h1 class="title">{{$page.title}}</h1>
         <PageInfo :pageInfo="$page" :showAccessNumber="showAccessNumber"></PageInfo>
+        </div>
       </div>
     </ModuleTransition>
 

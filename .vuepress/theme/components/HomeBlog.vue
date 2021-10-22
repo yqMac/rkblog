@@ -36,7 +36,7 @@
     :data="$recoPosts"
     :currentPage="currentPage"></note-abstract>
     <!-- 分页 -->
-    <pagation
+    <Pagation
          class="pagation"
     :total="$recoPosts.length"
     :currentPage="currentPage"
@@ -233,6 +233,11 @@
                 .abstract-wrapper {
                     .abstract-item:last-child {
                         margin-bottom: 0px;
+                    }
+                }
+                .pagation {
+                    .pagation-list {
+                        line-height:20px;
                     }
                 }
             }
